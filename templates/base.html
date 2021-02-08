@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mieszkania OLX i OTODOM</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style24.css') }}">
+    <link href="{{ url_for('static', filename='/bootstrap/bootstrap.css') }}" rel="stylesheet">
+
+    <link rel="icon" href="{{ url_for('static', filename='/image/www.png') }}">
+</head>
+<body>
+    <nav class="naglowek navbar navbar-bottom-top navbar-light text-center ">
+           <ul class="nav justify-content-center">
+              <li class="nav-item ml-5">
+                <a class="navbar-brand" href="/"><img src="../../static/image/www.png"/></a>
+              </li>
+              <li class="nav-item mt-3">
+                <a class="oferta nav-link " href="/olx">Mieszkania z OLX</a>
+              </li>
+              <li class="nav-item mt-3">
+                <a class="oferta nav-link" href="/oto_dom">Mieszkania z OTODOM</a>
+              </li>
+           </ul>
+    </nav>
+{% block content %}
+    <div class="text-center mt-4 mb-3">
+        <h3>Projekt 4</h3>
+        <p>Projekt miał na celu wykorzystania plików z Projektu 2, w którym ze stron OLX i OTODOM<br> zostały pobrane z ogłoszeń poszczególne dane mieszkań.</p>
+            <p>Ze strony Olx zostały wzięte pod uwage<br> nazwa ogłoszenia, cena, dzielinica, link i czy jest możliwa negocjacja mieszkania</p>
+        <p>Ze strony OtoDom zescrapowane zostało <br> tytuł ogłoszenia, cena, dzielnica czy mieszkanie jest na sprzedaz czy na wynajem i<br> link do ogłoszenia</p>
+    </div>
+    <div class="text-center mt-3">
+        <img  src="../../static/image/test.jpg" class="">
+    </div>
+{% endblock %}
+</body>
+<footer class=" text-center text-lg-start mt-5">
+    <div class="stopka text-center p-3 position-sticky">
+    <div class="container p-0">
+    <div class="row">
+      <div class="col-6 col-md-6 mb-4 mb-md-0 mt-3">
+        <ul class="list-unstyled mb-0">
+            <li>
+            <a href="/" class="text-dark">Strona główna</a>
+          </li>
+          <li>
+            <a href="/olx" class="text-dark">OLX</a>
+          </li>
+          <li>
+            <a href="/oto_dom" class="text-dark">OTODOM</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mt-3 mr-5 ">
+           <img src="../../static/image/www.png"/>
+      </div>
+
+        <div class="text-center mt-2 mr-3">
+            <p class="text-dark mt-3 mb-0">© 2020 Copyright:</p>
+                <p class="text-dark"> Paweł Rutkowski</p>
+            </div>
+        <div class="img-fluid mt-4">
+            <a href="https://www.linkedin.com/in/pawe%C5%82-rutkowski-8a121b202/">
+                <img src="../../static/image/link.png"/></a>
+            </div>
+    </div>
+    </div>
+    </div>
+</footer>
+</html>
